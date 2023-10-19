@@ -11,11 +11,14 @@ void DrawMain()
     for (int i = 0; i < 5; i++) {
         FillCircle(i*100-200, -190, 30, kColorBlue, M_PI/6+i*M_PI/2, -M_PI/6+i*M_PI/2);
     }
-
+    
     for (int x = -100; x <= 100; x+=10) {
         DrawCircle(x, 0, 150, kColorBlue);
     }
-
+    for (int x = -100; x <= 100; x+=10) {
+        DrawCircle(x, 0, 150, kColorRed);
+    }
+    
     for (int x = -250; x < -50; x+=10) {
         Paint(x+5, 0, kColorDarkBlue, kColorBlue);
     }
